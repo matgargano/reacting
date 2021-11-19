@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import GradeBot from './Components/GradeBot';
+import Greeting from './Components/Greeting';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Greeting greetingWord="Hey" personName="Mat" />
+      <Greeting greetingWord="Yo" personName="Mohamed" />
+      <Greeting greetingWord="Sup" personName="Bola" />
+      <Greeting personName="Peter" />
+      <GradeBot />
+      <GradeBot />
+      <GradeBot />
     </div>
   );
 }
